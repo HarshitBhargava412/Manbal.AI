@@ -1,0 +1,12 @@
+.hero {
+    display: flex;
+    height: auto;
+    position: relative;
+    gap: 20px;
+    padding: 20px;
+}
+
+.bg-dark {
+    height: 100%;
+    background: #343a40;
+}

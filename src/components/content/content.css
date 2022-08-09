@@ -1,0 +1,114 @@
+.contentContainer {
+    width: 75%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.searchContainer {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchTitle {
+    color: white;
+}
+
+.searchBar {
+    background: rgba(245, 245, 245, 0.1);
+    width: 45%;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.searchIcon {
+    color: white;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.form-control {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    margin-left: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: white;
+    border: none;
+    box-shadow: none;
+}
+
+.countryDiv {
+    display: none;
+    position: absolute;
+    width: 41%;
+    background: rgba(245, 245, 245, 0.4);
+    margin-top: 2.5rem;
+    margin-left: 0.6rem;
+    max-height: 240px;
+    overflow-y: scroll;
+}
+
+.countryDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.countryName {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.countryName:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.tableContainer {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    color: white;
+}
+
+@media (max-width: 968px) {
+    .contentContainer {
+        width: 100%;
+    }
+
+    .searchContainer {
+        height: 20%;
+        margin-bottom: 15px;
+    }
+
+    .searchBar {
+        width: 100%;
+    }
+
+    .countryDiv {
+        width: 85%;
+    }
+}
